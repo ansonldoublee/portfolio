@@ -80,6 +80,7 @@ header {
 nav {
     background-color: var(--primary-dark);
     height: 48px;
+    padding-right: 32px;
 }
 
 nav ul {
