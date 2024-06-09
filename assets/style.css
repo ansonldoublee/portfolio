@@ -389,13 +389,47 @@ nav ul li a {
     text-align: center;
 }
 
+/* style tabs here */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 32px;
+    margin: 0 5px;
+    border: solid;
+    border-width: 2px;
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+    background-color: var(--light-beige);
+    font-size: 16px;
+}
+
+.tab-button:hover,
+.tab-button.active {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+}
+
+.more-work-card {
+    display: none; /* Hide all cards by default */
+}
+
+.more-work-card.active {
+    display: block; /* Display only active cards */
+}
+
 .more-work-section {
     background-color: var(--light-beige);
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     max-width: 1180px;
-
 }
 
 .more-work-card {
