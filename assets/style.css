@@ -381,7 +381,9 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--light-beige);
+    margin-bottom: 80px;
+    /* background-color: var(--light-beige); */
+    
 }
 
 .more-work-heading {
@@ -405,8 +407,9 @@ nav ul li a {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 100px;
-    background-color: var(--light-beige);
+    /* background-color: var(--light-beige); */
     font-size: 16px;
+    background-color: white;
 }
 
 .tab-button:hover,
@@ -425,7 +428,6 @@ nav ul li a {
 }
 
 .more-work-section {
-    background-color: var(--light-beige);
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -438,15 +440,24 @@ nav ul li a {
     min-height: 200px;
     border-radius: 16px;
     margin: 16px;
+    background-color: white;
+}
+
+.more-work-card .card-description {
+    display: none;
 }
 
 .mw-card-img{
     min-height: 320px;
-    background-color: #424242;
-    border-radius: 8px 8px 8px 8px;
+    /* background-color: #424242; */
     display: grid;
     place-items: center;
 }
+
+.mw-card-img img {
+    border-radius: 16px;
+}
+
 
 footer {
     text-align: center;
