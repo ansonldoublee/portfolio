@@ -12,9 +12,18 @@
     margin: 0;
 }
 
+h1 {
+    font-family: "HelveticaNeue-CondensedBlack";
+    font-size: 88px;
+}
+
 h2 {
     font-family: "HelveticaNeue-CondensedBlack";
     font-size: 56px;
+}
+
+h3, h4, h5, h6, p{
+    font-family: "Helvetica Neue Light";
 }
 
 a {
@@ -61,7 +70,6 @@ header {
     border-style: solid;
     border-width: 1.5px;
     border-radius: 100px;
-    cursor: pointer;
 }
 
 .banner-content button:hover {
@@ -167,12 +175,15 @@ nav ul li a {
     border-radius: 100px;
     border-color: var(--primary-dark);
     box-shadow: 2px 2px 0 #262626;
+    cursor: pointer;
 }
 
 #primary-button-cartoon:hover {
     box-shadow: 4px 4px 0 #1D2CF3;
+    color:var(--primary-blue);
     border-color: var(--primary-blue);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #static-plus-button {
@@ -209,6 +220,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     background-color: var(--light-beige);
+    padding-bottom: 40px;
 }
 
 .wid-heading {
@@ -256,6 +268,125 @@ nav ul li a {
 
 .card-description {
     padding: 16px;
+}
+
+.featured-work-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-beige);
+}
+
+.featured-work-heading {
+    padding: 32px;
+    text-align: center;
+}
+
+.featured-work-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8FCFF;
+}
+
+.ai-writer-container {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ai-writer-image {
+    max-width: 800px;
+    display: grid;
+    place-items: center;
+    padding:32px;
+}
+
+#ai-writer-png {
+    max-width: 480px ;
+    height: auto;
+    width: 50vw
+}
+
+.ai-writer-text {
+    max-width: 800px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.ai-writer-text h2, 
+.ai-writer-text h3, 
+.ai-writer-text h4,
+.ai-writer-text a {
+    padding: 16px;
+    color: #004F71;
+}
+
+
+.featured-work-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1FFF7;
+}
+
+.cm-signup-container {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cm-signup-image {
+    max-width: 800px;
+    display: grid;
+    place-items: center;
+    padding:32px;
+}
+
+#cm-signup-png {
+    max-width: 480px ;
+    height: auto;
+    width: 50vw
+}
+
+.cm-signup-text {
+    max-width: 800px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.cm-signup-text h2, 
+.cm-signup-text h3, 
+.cm-signup-text h4,
+.cm-signup-text a {
+    padding: 16px;
+    color: #1E5638;
+}
+
+.more-work-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-beige);
+}
+
+.more-work-heading {
+    padding: 32px;
+    text-align: center;
 }
 
 footer {
