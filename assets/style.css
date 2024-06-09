@@ -377,7 +377,7 @@ nav ul li a {
     color: #1E5638;
 }
 
-.more-work-header {
+.more-work-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,6 +387,31 @@ nav ul li a {
 .more-work-heading {
     padding: 32px;
     text-align: center;
+}
+
+.more-work-section {
+    background-color: var(--light-beige);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    max-width: 1180px;
+
+}
+
+.more-work-card {
+    max-width: 320px;
+    min-width: 240px;
+    min-height: 200px;
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.mw-card-img{
+    min-height: 320px;
+    background-color: #424242;
+    border-radius: 8px 8px 8px 8px;
+    display: grid;
+    place-items: center;
 }
 
 footer {
