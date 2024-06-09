@@ -124,6 +124,13 @@ nav ul li a {
     border-width: 4px;
     box-shadow: 6px 6px 0 black;
     z-index: 4;
+    animation: pulse 4s;
+}
+
+@keyframes pulse {
+    75% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+    100% { transform: scale(1); }
 }
 
 .welcome-card-header {
@@ -287,7 +294,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8FCFF;
+    background-color: #edf3f9;
 }
 
 .ai-writer-container {
