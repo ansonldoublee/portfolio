@@ -239,6 +239,7 @@ nav ul li a {
 .wid-card-section {
     display: flex;
     flex-direction: row;
+    padding-bottom: 80px;
 }
 
 .what-i-do-card {
@@ -248,6 +249,30 @@ nav ul li a {
     background-color: white;
     border-radius: 16px;
     margin: 16px;
+}
+
+.wid-card-img {
+    height: auto;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+
+}
+
+.wid-card-img-title {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.wid-card-title {
+    font-family: "HelveticaNeue-CondensedBlack";
+    font-size: 28px;
+}
+
+.wid-description-text {
+    font-family: "Helvetica Neue Light";
 }
 
 .card-img-blue {
@@ -285,10 +310,10 @@ nav ul li a {
     background-color: var(--light-beige);
 }
 
-.featured-work-heading {
+/* .featured-work-heading {
     padding: 32px;
     text-align: center;
-}
+} */
 
 .featured-work-01 {
     display: flex;
@@ -385,11 +410,60 @@ nav ul li a {
     color: #1E5638;
 }
 
+.featured-work-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFBFF;
+}
+
+.zk-cancellation-container {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zk-cancellation-image {
+    max-width: 800px;
+    display: grid;
+    place-items: center;
+    padding:32px;
+}
+
+#cancellation-flow-png {
+    max-width: 480px ;
+    height: auto;
+    width: 50vw
+}
+
+.zk-cancellation-text {
+    max-width: 800px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.zk-cancellation-text h2, 
+.zk-cancellation-text h3, 
+.zk-cancellation-text h4,
+.zk-cancellation-text a {
+    padding: 16px;
+    color: #3A3A76;
+}
+
+
 .more-work-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 120px;
     /* background-color: var(--light-beige); */
     
 }
