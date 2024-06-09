@@ -190,14 +190,15 @@ nav ul li a {
     position: absolute;
     z-index: 3;
     height: 100vh;
-    /* animation: pulse 8s; */
+    animation: pulse 8s;
 }
 
-/* @keyframes pulse {
+ /* commented out this animation FOR NOW */
+@keyframes pulse {
     0% { transform: scale(0.5); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
-} */
+}
 
 #background-graphics {
     height: 100%;
