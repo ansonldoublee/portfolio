@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type="text/css" href="./assets/article-style.css" > 
+    <link rel= "stylesheet" type="text/css" href="./assets/ai-writer-style.css" > 
     <link href="https://db.onlinewebfonts.com/c/db43803fb4a7ccad71c4b2c69d32922f?family=HelveticaNeue-CondensedBlack" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/0e6de1ec911a2e267ff136bbdd384a44?family=Helvetica+Neue+Light" rel="stylesheet">
     <title>AI Writer | Anson Lee UX UI Web Design Development Home</title>
 </head>
 <body>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <header>
-        <!-- <div class="top-banner">
-            <div class="banner-content">
-                <p>✨ Currently accepting Design and Development projects. Don’t miss out! ✨</p>
-                <button>Enquire now</button>
-            </div>
-        </div> -->
         <nav>
             <ul>
                 <li> <a href="index.html">Home</a></li>
@@ -25,8 +23,300 @@
         </nav>
     </header>
 
+    <section class="article-hero">
+        <section class="article-hero-text">
+             <h1>AI Writer</h1>
+             <h3>UX UI Design @ Campaign Monitor</h3>
+             <h4>Revolutionising Email Marketing Through Generative AI</h4>
+        </section>
+        <section>
+            <img src="assets/images/aiwriter-hero-img.png" class="article-hero-img" id="aiwriter-hero-img"></img>
+       </section>
+    </section>
 
-
+    <section class="article-summary">
+        <section class="summary-window">
+            <section class="summary-window-header">
+                <img src="assets/images/colored-buttons.svg"></img>
+                <img src="assets/images/close-button.svg"></img>
+            </section>  
+            <section class="summary-window-content">       
+                    <div id="summary-window-text">
+                        <h2 id="summary-window-text-1">Summary</h2>
+                        <div class="icon-subheading">
+                            <img src="assets/images/cm-logo.svg" id="summary-icon"></img>
+                            <h4 class="summary-window-subheading">"Campaign Monitor is an email marketing SAAS platform that enables businesses and marketers to create, send and optimise email marketing campaigns.</h4>
+                        </div>
+                        <p class="summary-window-subtext">Over the last few months, there have been many conversations on how might we leverage Artificial Inteligence (AI) for our users to make their jobs easier and more efficient. My task was to add AI capabilities into our existing email builder in a user-friendly way. This project was designed and released in late 2023." </p>
+                    </div>
+            </section>
+        </section>
+    </section>
     
+    <section class="slide-section">
+        <section class="slide-container mid">
+            <h2>Firstly, understanding the problem</h2>
+        </br>
+            <p>Before I even start designing, it’s always important to first understand the problem and ask the team as many questions as possible. This may include questions about our objective, scope, who we’re designing for, tech constraints and timelines. Clear communication will save us a lot of time in the long-run!</p>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container split">
+            <section id="left-content">
+                <h2>Hmm..</h2>
+                <p>Here's what I asked</p> 
+            </section>
+            <section id="right-content">
+                <ul>
+                    <li>
+                        <h3>WHY are we even adding AI to our email builder?</h3>
+                    </br>
+                        <p>A: Research has shown that 77% of marketers want to use AI to reduce the time spent on repetitive tasks and 62% of consumers are comfortable with generative AI, as long it doesn’t negatively impact their experience. We hypothesise that this feature will give us a competitive edge for new users to increase conversions, user retention and upgrade to our premium plans.</p> 
+                    </li>
+                </br>
+                    <li>
+                        <h3>WHAT is the objective and initial scope of the project?</h3>
+                    </br>
+                        <p>A: Adding an easy to use AI Prompt for email content in the builder using OpenAI -3.5 as the language model.</p> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container split">
+            <section id="left-content">
+                <h2></h2>
+                <p>More questions...</p> 
+            </section>
+            <section id="right-content">
+                <ul>
+                    <li>
+                        <h3>WHO are we designing for?</h3>
+                    </br>
+                        <p>A: At Campaign Monitor, we have thousands of active monthly users. These users range from marketers to small business owners who handle their own email marketing campaigns with a range of tech skills.</p> 
+                    </li>
+                </br>
+                    <li>
+                        <h3>WHAT is the timeline and tech constraints?</h3>
+                    </br>
+                        <p>A: Design and release by end of quarter. Also, the tech team is currently working on a POC for AI text/content generation and exploring whether additional features are feasible (with the deadline).</p> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    
+    <section class="slide-section">
+        <section class="slide-container mid">
+            <h2>Designing the MVP</h2>
+        </br>
+            <p>With a tight deadline, we first designed an MVP of the AI Writer. From our user surveys conducted on Appcues, we know that text/content generation is the most important feature for our users. So, our MVP will be focused on generating text.</p>
+        </section>
+    </section>
+
+    <!-- IMPORTANTTT add MVP vid here -->
+
+    <section class="full-content-section">
+        <section class="full-content-section-container">
+            <video controls id="ai-writer-video" controls>
+                <source src="assets/images/ai-writer-mvp-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container left-ul">
+            <section id="left-content">
+                <h2>Minimal UI</h2>
+                <ul>
+                    <li>
+                        <p>Leverages existing component from our design system to minimise tech effort due to time constraint</p> 
+                    </li>
+                    <li>
+                        <p>Designed to be simple and easy to use with only function to generate content, thus reducing learning curve for new users</p> 
+                    </li>
+                    <li>
+                        <p>Made sure that colour contrast is up to WCAG 2.0 contrast standards and there’s visual hierarchy for accessibility</p> 
+                    </li>
+                </ul>
+            </section>
+            <section id="right-content">
+                <img src="assets/images/minimal-ui.png"></img>
+            </section>
+        </section> 
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container left-ul">            
+            <section id="right-content">
+                <img src="assets/images/loading-animation.png"></img>
+            </section>
+            <section id="left-content">
+                <h2>Loading animation</h2>
+                <ul>
+                    <li>
+                        <p>One tech constraint that we had to design for was the loading time when generating content</p> 
+                    </li>
+                    <li>
+                        <p>I created a GIF as a way to indicate to the user that “AI is now writing”. This minor detail increases perceived value in the content and makes the waiting process less frustrating.</p> 
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+    </section>
+
+<!-- insert educational snippet here -->
+
+    <section class="slide-section">
+        <section class="slide-container mid">
+            <h2>Testing the MVP</h2>
+        </br>
+            <p>This MVP provided a solid foundation for our project. After receiving feedback and conducting design critiques, we identified areas for enhancement and generated new ideas for the next iteration. With both the design and engineering teams ahead of schedule, we were able to incorporate additional features.</p>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container split">
+            <section id="left-content">
+                <h2>Refining the design</h2>
+                <p>Improvements and refinements for the next iteration</p> 
+            </section>
+            <section id="right-content">
+                <ul>
+                    <li>
+                        <p>Incorporating a "Fix Spelling & Grammar" function</p> 
+                    </li>
+                    <li>
+                        <p>Implementing an "Adjust Length" function</p> 
+                    </li>
+                    <li>
+                        <p>Additional ability to modify the generated response</p> 
+                    </li>
+                    <li>
+                        <p>Introducing clickable example prompts</p> 
+                    </li>
+                    <li>
+                        <p>Addressing error states</p> 
+                    </li>
+                    <li>
+                        <p>Leveraging existing conversational patterns from other AI prompters</p> 
+                    </li>
+                    <li>
+                        <p>Expanding component size while maintaining alignment with our design system.</p> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <section class="full-content-section">
+        <section class="full-content-section-container">
+            <img src="assets/images/ai-demo.gif" alt="AI-writer-GIF" id="ai-writer-gif"></img>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container left-ul">
+            <section id="left-content">
+                <h4>Feature 01</h4>
+                <h2>Drag & drop</h2>
+                <ul>
+                    <li>
+                        <p>Integrated into the text block, users simply drag and drop then click on “AI Writer” to start</p> 
+                    </li>
+                    <li>
+                        <p>Users can also just click the “AI Writer” floating action button.</p> 
+                    </li>
+                </ul>
+            </section>
+            <section id="right-content">
+                <img src="assets/images/feature-01.png"></img>
+            </section>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container left-ul">            
+            <section id="right-content">
+                <img src="assets/images/feature-02.png"></img>
+            </section>
+            <section id="left-content">
+                <h4>Feature 02</h4>
+                <h2>Example prompts</h2>
+                <ul>
+                    <li>
+                        <p>To reduce the learning curve, users can view example prompts for inspiration.</p> 
+                    </li>
+                    <li>
+                        <p>They can also click to generate responses from the example.</p> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <section class="slide-section">
+        <section class="slide-container left-ul">
+            <section id="left-content">
+                <h4>Feature 03</h4>
+                <h2>Modify response</h2>
+                <ul>
+                    <li>
+                        <p>Similar to the pattern of other generative AI tools on the market</p> 
+                    </li>
+                    <li>
+                        <p>Users can improve or modify the response until they're satisfied and improve generated content </p> 
+                    </li>
+                </ul>
+            </section>
+            <section id="right-content">
+                <img src="assets/images/feature-03.png"></img>
+            </section>
+        </section>
+    </section>
+
+    <section class="slide-section">
+        <section class="slide-container left-ul">            
+            <section id="right-content">
+                <img src="assets/images/feature-04.png"></img>
+            </section>
+            <section id="left-content">
+                <h4>Feature 04</h4>
+                <h2>Apply directly to email</h2>
+                <ul>
+                    <li>
+                        <p>Users can directly add the generated copy into their email with just a click of a button.</p> 
+                    </li>
+                    <li>
+                        <p>They can also copy to clipboard and paste it manually.</p> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+<!-- NEXT STEPS (beta group) + METRICS (HMW measure success?)-->
+
+<!-- ENDING SECTION -->
+<section class="contact-me" id="contact-anchorpoint">
+    <section class="contact-me-container">
+        <h1> The End.</h1>
+        <h3> Have any questions or inquiries?</h3>
+        <h4>Add me on LinkedIn or email me at <a href="mailto:ansonldoublee@gmail.com" id="email-link">ansonldoublee@gmail.com</a></h4>
+        <a href="https://www.linkedin.com/in/ansonldoublee/" target="_blank"><button class="contact-button">LinkedIn</button></a>
+            <section class="lottie-bye">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/fc6cfa5b-bbec-4ea2-9fb0-9880e781fccc/gAA0iH0kph.json" background="transparent" speed="1" style="width: 30236; height: 168" direction="1" playMode="bounce" loop autoplay></dotlottie-player>
+    </section>
+</section>
+
+
+</section>
+<script src="./assets/js/progress-bar.js"></script>
 </body>
+
+<footer>Thanks for visiting! ☺</footer>
 </html>

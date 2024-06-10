@@ -12,6 +12,7 @@
     margin: 0;
 }
 
+/* add smooth scroll behaviour to all pages */
 html {
     scroll-behavior: smooth;
 }
