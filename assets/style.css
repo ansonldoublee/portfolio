@@ -26,6 +26,10 @@ h3, h4, h5, h6, p{
     font-family: "Helvetica Neue Light";
 }
 
+p {
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
 }
@@ -101,6 +105,11 @@ nav ul li a {
     margin-left: 25px;
     color:rgb(255, 255, 255);
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    transform:scale(1.05);
+    font-weight: bolder
 }
 
 .hero {
@@ -209,6 +218,7 @@ nav ul li a {
     position: absolute;
     z-index: 3;
     height: 100vh;
+    overflow: hidden;
     animation: pulse 8s;
 }
 
@@ -219,8 +229,13 @@ nav ul li a {
     100% { transform: scale(1); }
 }
 
+
+/* can potentially remove max-width here later */
 #background-graphics {
     height: 100%;
+    overflow: hidden;
+    width: auto;
+    max-width: 100%
 }
 
 .what-i-do {
@@ -238,7 +253,9 @@ nav ul li a {
 
 .wid-card-section {
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
+    justify-content: center;
     padding-bottom: 80px;
 }
 
