@@ -349,6 +349,24 @@ max-width: 320px;
     object-fit: contain;
 }
 
+.stats-container {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stats {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 32px 0 32px;
+}
+
+.stats h2 {
+    font-family: "Helvetica Neue Light";
+    font-size: 56px;
+}
+
 
 /* ENDING SECTION AND FOOTER */
 .contact-me {
@@ -421,11 +439,13 @@ footer {
 
 /* TO-DO
 X Add MVP video
-- Add feature screenshots 
+X Add feature screenshots 
+X Progress scrolling bar
+
 - Add Explain BETA group testing/release
 - Add HMW measure success?
 - Add metrics
+
 - Iteration is key (EDUCATIONAL)
 - Loading bar = value (EDUCATIONAL) >> mid slife with light bulb
-X Progress scrolling bar
 */
