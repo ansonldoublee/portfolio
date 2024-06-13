@@ -96,7 +96,7 @@ header {
 }
 
 .banner-content button:hover {
-    box-shadow: 2px 2px 0 white;
+    box-shadow: 2px 2px 0 rgb(255, 255, 255);
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -180,6 +180,10 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: center;
     padding: 0 0 16px 0;
+}
+
+#lottie-div-200 {
+    display:none;
 }
 
 #welcome-right {
@@ -585,8 +589,31 @@ nav ul li a:hover {
 #zkapp-img:hover,
 #granddays-img:hover,
 #getup-img:hover {
-    transform: scale(1.03);
     cursor: pointer;
+}
+
+#aiwriter-img:hover {
+    transform: rotate(-1.5deg) scale(1.03);
+}
+
+#cmsignup-img:hover  {
+    transform: rotate(1deg) scale(1.03);
+}
+
+#zkcancellations-img:hover  {
+    transform: rotate(1.3deg) scale(1.03);
+}
+
+#zkapp-img:hover  {
+    transform: rotate(0.8deg) scale(1.03);
+}
+
+#granddays-img:hover {
+    transform: rotate(-2deg) scale(1.03);
+}
+
+#getup-img:hover  {
+    transform: rotate(-1deg) scale(1.03);
 }
 
 .arrow {
@@ -660,4 +687,120 @@ footer {
     color: white;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+@media screen and (max-width: 990px) {
+    .top-banner {
+        display: none;
+    }
+
+    #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
+        width: 30vw;
+    }
+
+    .welcome-card-main {
+        margin: 8px
+    }
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .animation-container{
+        height: 30vh
+    }
+
+    #welcome-text-1 {
+        font-size: 40px;
+    }
+
+    .welcome-buttons button {
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    #static-plus-button {
+        display: none;
+    }
+    
+    .featured-work-01, 
+    .featured-work-02,
+    .featured-work-03 {
+        min-height: 800px;
+    }
+
+    .ai-writer-container, .cm-signup-container, .zk-cancellation-container  {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .cm-signup-container {
+        flex-direction: column;
+    }
+
+    .ai-writer-text, .cm-signup-text, .zk-cancellation-text {
+        width: 80vw;
+        margin: 4px;
+    }
+
+    #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
+        width: 40vw;
+        padding: 16px
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .tab-button {
+        padding: 6px 16px;
+        margin: 0 5px;
+        border: solid;
+        border-width: 1.5px;
+        color: var(--primary-dark);
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 100px;
+        /* background-color: var(--light-beige); */
+        font-size: 12px;
+        background-color: white;
+    }
+
+    #lottie-div-200 {
+        display: flex;
+    }
+
+    #lottie-div-300 {
+        display: none;
+    }
+
+    .ai-writer-text, .cm-signup-text, .zk-cancellation-text {
+        width: 80vw;
+        margin: 4px;
+    } 
+
+    .ai-writer-text h2, 
+    .ai-writer-text h3, 
+    .ai-writer-text h4,
+    .ai-writer-text a, 
+    .cm-signup-text h2, 
+    .cm-signup-text h3, 
+    .cm-signup-text h4,
+    .cm-signup-text a,
+    .zk-cancellation-text h2, 
+    .zk-cancellation-text h3, 
+    .zk-cancellation-text h4,
+    .zk-cancellation-text a {
+    padding: 8px;
+}
+
+    #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
+        width: 40vh;
+        padding: 16px
+    }
+
+    #ai-writer-image, #cm-signup-image, #zk-cancellation-image {
+        padding: 4px;
+    } 
+
 }

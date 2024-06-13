@@ -56,13 +56,24 @@
                 <img src="assets/images/close-button.svg"></img>
             </section>  
             <section class="welcome-content">
-                <div class="welcome-lottie">
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-                    <div id="lottie-div">
-                    <dotlottie-player src="https://lottie.host/c9d26e31-9a9d-4980-a1fc-73235d38c9e7/DXH8TcaA0f.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay>
-                    </dotlottie-player>
-                </div>
-                </div>
+                <!-- animation 300px desktop version  -->
+
+                <section class=welcome-left>
+                    <div id="welcome-lottie-300">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                        <div id="lottie-div-300">
+                        <dotlottie-player src="https://lottie.host/c9d26e31-9a9d-4980-a1fc-73235d38c9e7/DXH8TcaA0f.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay>
+                        </dotlottie-player>
+                    </div>
+                    <!-- animation 200px mobile version  -->
+                    <div id="welcome-lottie-200">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                        <div id="lottie-div-200">
+                        <dotlottie-player src="https://lottie.host/c9d26e31-9a9d-4980-a1fc-73235d38c9e7/DXH8TcaA0f.json" background="transparent" speed="1" style="width: 200px; height: 200px" direction="1" playMode="normal" loop autoplay>
+                        </dotlottie-player>
+                    </div>
+                </section>
+
                 <div id="welcome-right">
                     <div id="welcome-text">
                         <h1 id="welcome-text-1">Hi! I'm Anson Lee,</h1>
