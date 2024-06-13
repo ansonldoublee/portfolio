@@ -436,6 +436,54 @@ footer {
     padding-bottom: 40px;
 }
 
+@media screen and (max-width: 990px){
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+  }
+
+@media screen and (max-width: 480px){
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .slide-container.split  {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #left-content h2 {
+        text-align: center;
+    }
+    #left-content p {
+        text-align: center;
+    }
+    .slide-container.split #left-content {
+        width: 80vw;
+    }
+    .slide-container.split #right-content {
+        width: 80vw;
+    }
+    .stats-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .stats-container h2 {
+        font-size: 32px;
+    }
+}
+
 
 /* TO-DO
 X Add MVP video
