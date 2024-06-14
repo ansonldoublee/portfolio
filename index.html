@@ -22,7 +22,7 @@
 </script>
 <body>
      <!-- header navigation bar -->
-    <header>
+    <header id="hide-header">
         <!-- <div class="top-banner">
             <div class="banner-content">
                 <p>✨ Currently accepting Design and Development projects. Don’t miss out! ✨</p>
@@ -32,9 +32,10 @@
 
         <div class="top-banner">
             <div class="banner-content">
-                <p>👷 Note: Currently rebuilding my site - Please excuse or report any glitches and bugs! 🚧</p>
+                <p>👷 Work in progress - Feel free to report any issues and bugs here &rarr;</p>
                 <a href="mailto:ansonldoublee@gmail.com?subject=Report%20Issue">
                 <button id="report-button">Report issue</button></a>
+                <p>🚧</p>
             </div>
         </div>
 
@@ -52,7 +53,7 @@
     <section class="hero">
         <section class="welcome-card-main">
             <section class="welcome-card-header">
-                <img src="assets/images/colored-buttons.svg"></img>
+                <img src="assets/images/colored-buttons.svg" id="colored-buttons"></img>
                 <!-- <img src="assets/images/close-button.svg"></img> -->
             </section>  
             <section class="welcome-content">
@@ -78,7 +79,7 @@
                     <div id="welcome-text">
                         <h1 id="welcome-text-1">Hi! I'm Anson Lee,</h1>
                         <h4 class="welcome-subheading">I'm a UX/UI Designer and Developer based in Australia</h4>
-                        <p>Welcome! Feel free to explore and learn more about my work</p>
+                        <p>Welcome! Feel free to explore my work and learn more about me.</p>
                     </div>
                     <div class="welcome-buttons">
                         <a href="index.html#featured-work-anchorpoint">
@@ -92,8 +93,13 @@
                 </div>
             </section>
         </section>
+
+        <section class="hero-dock-container">
+            <img src="./assets/images/hero_dock.svg" id="hero-dock-svg"></img>
+        </section>
+
         <section class="hero-background">
-            <img src="./assets/images/hero.svg" id="background-graphics"></img>
+            <img src="./assets/images/hero-01.svg" id="background-graphics"></img>
         </section>
 
     </section>
@@ -319,11 +325,17 @@
 
     <!-- This is the JS script for the tab selection section -->
     <script src="./assets/js/script.js"></script>
-</body>
+
+    <!-- This is the JS script to hide the header on scroll -->
+    <script src="./assets/js/nav-hide.js"></script>
 
 <footer>
 <p>Built and designed by Anson Lee</p>
 </br>
 <p>Thanks for visiting! ☺</p>
 </footer>
+
+</body>
+
+
 </html>
