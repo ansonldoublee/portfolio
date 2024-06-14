@@ -411,7 +411,7 @@ max-width: 320px;
     padding: 4px 24px;
     margin: 0 0 0 16px;
     font-size: 20px;
-    background-color: #EDF3F9;
+    background-color: white;
     color: var(--primary-dark);
     border: var(--primary-dark);
     border-style: solid;
@@ -501,6 +501,7 @@ X Add metrics
 - Toggle modes? with cosntruction cap
 - Rename .js files
 - Rotate cards on hover, make responsive
+- Hide nav on vertical scroll
 
 - Beja.ai
 - ARC817

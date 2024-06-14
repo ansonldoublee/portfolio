@@ -190,6 +190,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     padding:20px;
+    gap: 8px;
 }
 
 #welcome-text {
@@ -226,6 +227,34 @@ nav ul li a:hover {
     border-color: var(--primary-blue);
     transform: scale(1.05);
     cursor: pointer;
+}
+
+#primary-button-cartoon-dark {
+    padding: 8px 32px 8px 32px;
+    color: white;
+    background-color: var(--primary-dark);
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 100px;
+    border-color: var(--light-beige);
+    box-shadow: 2px 2px 0 #262626;
+    cursor: pointer;
+}
+
+#primary-button-cartoon-dark:hover {
+    box-shadow: 4px 4px 0 #1D2CF3;
+    color:white;
+    background-color: var(--primary-blue);
+    border-color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.welcome-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
 
 #static-plus-button {
@@ -500,7 +529,6 @@ nav ul li a:hover {
     color: #3A3A76;
 }
 
-
 .more-work-container {
     display: flex;
     flex-direction: column;
@@ -664,7 +692,7 @@ nav ul li a:hover {
     padding: 4px 24px;
     margin: 0 0 0 16px;
     font-size: 20px;
-    background-color: var(--light-beige);
+    background-color: white;
     color: var(--primary-dark);
     border: var(--primary-dark);
     border-style: solid;
@@ -722,11 +750,20 @@ footer {
     #static-plus-button {
         display: none;
     }
+
+    #lottie-div-200 {
+        display: flex;
+    }
+
+    #lottie-div-300 {
+        display: none;
+    }
     
     .featured-work-01, 
     .featured-work-02,
     .featured-work-03 {
         min-height: 800px;
+        padding-top:32px;
     }
 
     .ai-writer-container, .cm-signup-container, .zk-cancellation-container  {
@@ -743,6 +780,21 @@ footer {
         width: 80vw;
         margin: 4px;
     }
+
+    .ai-writer-text h2, 
+    .ai-writer-text h3, 
+    .ai-writer-text h4,
+    .ai-writer-text a, 
+    .cm-signup-text h2, 
+    .cm-signup-text h3, 
+    .cm-signup-text h4,
+    .cm-signup-text a,
+    .zk-cancellation-text h2, 
+    .zk-cancellation-text h3, 
+    .zk-cancellation-text h4,
+    .zk-cancellation-text a {
+    padding: 8px;
+}
 
     #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
         width: 40vw;
@@ -766,33 +818,10 @@ footer {
         background-color: white;
     }
 
-    #lottie-div-200 {
-        display: flex;
-    }
-
-    #lottie-div-300 {
-        display: none;
-    }
-
     .ai-writer-text, .cm-signup-text, .zk-cancellation-text {
         width: 80vw;
         margin: 4px;
     } 
-
-    .ai-writer-text h2, 
-    .ai-writer-text h3, 
-    .ai-writer-text h4,
-    .ai-writer-text a, 
-    .cm-signup-text h2, 
-    .cm-signup-text h3, 
-    .cm-signup-text h4,
-    .cm-signup-text a,
-    .zk-cancellation-text h2, 
-    .zk-cancellation-text h3, 
-    .zk-cancellation-text h4,
-    .zk-cancellation-text a {
-    padding: 8px;
-}
 
     #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
         width: 40vh;
