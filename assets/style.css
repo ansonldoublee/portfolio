@@ -294,7 +294,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 48px; /* Position at the bottom of the screen */
     z-index: 4;
-    height: 40px;
+    height: 48px;
     width:auto;
 }
 
