@@ -490,6 +490,10 @@ nav ul li a:hover {
     padding:8px;
 }
 
+.ai-writer-image:hover {
+    transform: scale(1.05) rotate(1.5deg);
+}
+
 #ai-writer-png {
     max-width: 640px ;
     height: auto;
@@ -538,6 +542,10 @@ nav ul li a:hover {
     padding:32px;
 }
 
+.cm-signup-image:hover {
+    transform: scale(1.05) rotate(-1.5deg);
+}
+
 #cm-signup-png {
     max-width: 640px ;
     height: auto;
@@ -583,6 +591,10 @@ nav ul li a:hover {
     display: grid;
     place-items: center;
     padding:32px;
+}
+
+.zk-cancellation-image:hover {
+    transform: scale(1.05) rotate(1deg);
 }
 
 #cancellation-flow-png {
