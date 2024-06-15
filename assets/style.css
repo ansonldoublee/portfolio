@@ -479,7 +479,7 @@ nav ul li a:hover {
     width: 100vw;
     height: 100vh;
     max-width: 1180px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -487,17 +487,17 @@ nav ul li a:hover {
     max-width: 800px;
     display: grid;
     place-items: center;
-    padding:32px;
+    padding:8px;
 }
 
 #ai-writer-png {
-    max-width: 480px ;
+    max-width: 640px ;
     height: auto;
-    width: 50vw
+    width: 70vw
 }
 
 .ai-writer-text {
-    max-width: 800px;
+    max-width: 640px;
     min-width: 320px;
     display: flex;
     flex-direction: column;
@@ -509,7 +509,7 @@ nav ul li a:hover {
 .ai-writer-text h4,
 .ai-writer-text a {
     padding: 16px;
-    color: #004F71;
+    /* color: #004F71; */
 }
 
 
@@ -527,7 +527,7 @@ nav ul li a:hover {
     width: 100vw;
     height: 100vh;
     max-width: 1180px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -539,9 +539,9 @@ nav ul li a:hover {
 }
 
 #cm-signup-png {
-    max-width: 480px ;
+    max-width: 640px ;
     height: auto;
-    width: 50vw
+    width: 70vw
 }
 
 .cm-signup-text {
@@ -557,7 +557,7 @@ nav ul li a:hover {
 .cm-signup-text h4,
 .cm-signup-text a {
     padding: 16px;
-    color: #1E5638;
+    /* color: #1E5638; */
 }
 
 .featured-work-03 {
@@ -574,7 +574,7 @@ nav ul li a:hover {
     width: 100vw;
     height: 100vh;
     max-width: 1180px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -586,9 +586,9 @@ nav ul li a:hover {
 }
 
 #cancellation-flow-png {
-    max-width: 480px ;
+    max-width: 640px ;
     height: auto;
-    width: 50vw
+    width: 70vw
 }
 
 .zk-cancellation-text {
@@ -604,7 +604,7 @@ nav ul li a:hover {
 .zk-cancellation-text h4,
 .zk-cancellation-text a {
     padding: 16px;
-    color: #3A3A76;
+    /* color: #3A3A76; */
 }
 
 .more-work-container {
@@ -675,6 +675,11 @@ nav ul li a:hover {
 }
 
 .more-work-card .card-description {
+    display: block;
+    text-align: center;
+}
+
+.more-work-card .card-description p{
     display: none;
 }
 
@@ -806,10 +811,6 @@ footer p {
         display: none;
     }
 
-    #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
-        width: 30vw;
-    }
-
     .welcome-card-main {
         margin: 8px
     }
@@ -850,14 +851,19 @@ footer p {
     .featured-work-01, 
     .featured-work-02,
     .featured-work-03 {
-        min-height: 800px;
         padding-top:32px;
     }
 
     .ai-writer-container, .cm-signup-container, .zk-cancellation-container  {
+        min-height: 900px;
+        display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
+        padding-top:40px;
+        padding-bottom:40px;
+        
     }
 
     .cm-signup-container {
@@ -867,6 +873,7 @@ footer p {
     .ai-writer-text, .cm-signup-text, .zk-cancellation-text {
         width: 80vw;
         margin: 4px;
+        padding-top: 64px;
     }
 
     .ai-writer-text h2, 
@@ -885,7 +892,7 @@ footer p {
 }
 
     #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
-        width: 40vw;
+        width: 80vw;
         padding: 16px
     }
 
@@ -912,7 +919,7 @@ footer p {
     } 
 
     #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
-        width: 40vh;
+        width: 80vh;
         padding: 16px
     }
 
