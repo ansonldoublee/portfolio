@@ -96,7 +96,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 80px;
     position: relative;
     gap: 40px;
@@ -104,7 +104,6 @@ nav ul li a:hover {
 }
 
 .article-hero-text {
-    flex: 1;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -434,6 +433,13 @@ footer {
     color: white;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1400px){
+    #aiwriter-hero-img {
+        max-height: 800px;
+        max-width: 2000px;
+    }
 }
 
 @media screen and (max-width: 990px){
