@@ -488,10 +488,12 @@ nav ul li a:hover {
     display: grid;
     place-items: center;
     padding:8px;
+    transition: transform 0.5s ease-in-out;
+    
 }
 
 .ai-writer-image:hover {
-    transform: scale(1.05) rotate(1.5deg);
+    transform: scale(1.05);
 }
 
 #ai-writer-png {
@@ -540,10 +542,11 @@ nav ul li a:hover {
     display: grid;
     place-items: center;
     padding:32px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .cm-signup-image:hover {
-    transform: scale(1.05) rotate(-1.5deg);
+    transform: scale(1.05);
 }
 
 #cm-signup-png {
@@ -591,10 +594,11 @@ nav ul li a:hover {
     display: grid;
     place-items: center;
     padding:32px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .zk-cancellation-image:hover {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.05);
 }
 
 #cancellation-flow-png {
