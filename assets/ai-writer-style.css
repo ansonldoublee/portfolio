@@ -114,7 +114,7 @@ nav ul li a:hover {
 .article-hero-text h1,
 .article-hero-text h3,
 .article-hero-text h4 {
-    color: #004F71;
+    /* color: #004F71; */
     line-height: 1.5;
     margin: 8px;
 }
