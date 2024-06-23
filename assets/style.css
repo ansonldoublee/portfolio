@@ -16,6 +16,7 @@
     z-index: 5;
     top: 0; /* Initial position */
     transition: top 0.3s; /* Smooth transition */
+    cursor: url(images/cursor.svg) 16 16, auto;
 }
 
 *{
