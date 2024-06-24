@@ -834,6 +834,10 @@ nav ul li a:hover {
     transform: rotate(-1deg) scale(1.03);
 }
 
+#comingsoon-img:hover {
+    filter: grayscale(100%);
+}
+
 .arrow {
     justify-content: center;
     display: flex;
