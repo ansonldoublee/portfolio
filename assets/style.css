@@ -1060,6 +1060,11 @@ footer h4 {
     .memo {
         display: none;
     }
+
+    #WIP {
+        display: none;
+    }
+
     .top-banner {
         display: none;
     }
