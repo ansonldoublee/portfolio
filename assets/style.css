@@ -931,7 +931,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;
-    background: #EAEAEA;
+    background: #F6F2F1;
     margin-right: 16px;
     margin-left: 16px;
 }
