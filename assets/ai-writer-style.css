@@ -66,6 +66,27 @@ nav {
     z-index: 3;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--primary-dark);
+}
+
+.navigation-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    gap: 8px;
+}
+
+#home-icon {
+    margin-top: 4px;
+}
+
 nav ul {
     list-style-type: none;
     align-items: center;
