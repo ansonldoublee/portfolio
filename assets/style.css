@@ -537,19 +537,44 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #edf3f9;
+    background-color: white;
+    margin: 40px 0 80px 0;
 }
 
-.ai-writer-container {
+.ai-writer-container-blue {
     display: flex;
-    flex: wrap;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-    max-height: 1000px;
-    max-width: 1180px;
+    flex-direction: column-reverse;
+    width: 90vw;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #edf3f9;
+    border-radius: 32px;
+    max-width: 1180px;
+}
+
+.ai-writer-container-orange {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF5F0;
+    border-radius: 32px;
+    max-width: 1180px;
+}
+
+.ai-writer-container-purple {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F1FE;
+    border-radius: 32px;
+    max-width: 1180px;
 }
 
 .ai-writer-image {
@@ -578,26 +603,21 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-#ai-writer-png {
-    max-width: 640px;
-    height: auto;
-    width: 100%;
-}
-
 
 .ai-writer-text {
     max-width: 640px;
     min-width: 320px;
     display: flex;
     flex-direction: column;
-    margin: 16px;
+    margin: 40px 0 16px 0;
+    text-align: center;
 }
 
 .ai-writer-text h2, 
 .ai-writer-text h3, 
 .ai-writer-text h4,
 .ai-writer-text a {
-    padding: 16px;
+    padding: 8px;
     /* color: #004F71; */
 }
 
@@ -606,7 +626,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F1FBF5;
+    background-color: white;
 }
 
 .cm-signup-container {
@@ -911,6 +931,15 @@ nav ul li a:hover {
     border-radius: 16px;
 }
 
+/* hide these on full width, show on narrow */
+.playground-card-hide {
+    height: 320px;
+    width: 320px;
+    border-radius: 16px;
+    margin: 16px;
+    display:none;
+}
+
 #mini-section {
     justify-content: space-between;
     flex-direction: column;
@@ -1154,6 +1183,17 @@ footer h4 {
         padding: 16px
     }
 
+}
+
+
+@media screen and (max-width: 800px) {
+    .playground-card-hide {
+        display: flex;
+    }
+    .playground-card-big-gif,
+    .playground-card-long {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
