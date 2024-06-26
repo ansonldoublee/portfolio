@@ -278,9 +278,9 @@ nav ul li a:hover {
 }
 
 #primary-button-cartoon:hover {
-    box-shadow: 4px 4px 0 #1D2CF3;
-    color:var(--primary-blue);
-    border-color: var(--primary-blue);
+    box-shadow: 4px 4px 0 var(--primary-dark);
+    color:var(--primary-dark);
+    border-color: var(--primary-dark);
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -551,6 +551,7 @@ nav ul li a:hover {
     background-color: #edf3f9;
     border-radius: 32px;
     max-width: 1180px;
+    overflow: hidden;
 }
 
 .ai-writer-container-orange {
@@ -581,7 +582,7 @@ nav ul li a:hover {
     max-width: 800px;
     display: grid;
     place-items: center;
-    padding:8px;
+    padding: 8px 8px 0 8px;
     transition: transform 0.5s ease-in-out;
     position: relative;
     display: inline-block;
