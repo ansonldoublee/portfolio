@@ -170,7 +170,7 @@ nav ul li{
 }
 
 nav ul li a {
-    display: inline-block;
+    display: block;
     margin-left: 25px;
     color: var(--primary-dark);
     text-decoration: none;
