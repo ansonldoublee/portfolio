@@ -596,7 +596,8 @@ nav ul li a:hover {
 #ai-writer-png {
     max-width: 640px;
     height: auto;
-    width: 100%
+    width: 100%;
+    display:none;
 }
 
 #ai-writer-container {
@@ -659,6 +660,7 @@ nav ul li a:hover {
     max-width: 640px ;
     height: auto;
     width: 100%;
+    display:none;
 }
 
 .cm-signup-text {
@@ -1181,7 +1183,12 @@ footer h4 {
 
     #ai-writer-png, #cm-signup-png, #cancellation-flow-png {
         width: 80vw;
-        padding: 16px
+        padding: 16px;
+        display:flex;
+    }
+
+    .lottie-play {
+        display: none;
     }
 
 }
