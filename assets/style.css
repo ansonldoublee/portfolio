@@ -178,7 +178,8 @@ nav ul li a {
 
 nav ul li a:hover {
     transform:scale(1.05);
-    font-weight: bolder
+    font-weight: bolder;
+    color: var(--primary-blue);
 }
 
 .hero {
