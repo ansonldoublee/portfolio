@@ -254,7 +254,7 @@ nav ul li a:hover {
     padding: 0 0 16px 0;
 }
 
-#lottie-div-200 {
+#welcome-lottie-200 {
     display:none;
 }
 
@@ -1143,11 +1143,11 @@ footer h4 {
         display: none;
     }
 
-    #lottie-div-200 {
+    #welcome-lottie-200 {
         display: flex;
     }
 
-    #lottie-div-300 {
+    #welcome-lottie-300 {
         display: none;
     }
 
@@ -1262,13 +1262,18 @@ footer h4 {
 
 @media screen and (max-height: 600px) {
     #welcome-text-1 {
-        font-size: 40px;;
-    }
-    #lottie-div-200 {
-        display: flex;
+        font-size: 40px;
     }
 
-    #lottie-div-300 {
+    /* Mobile Lottie */
+    #welcome-lottie-200 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hide desktop Lottie */
+    #welcome-lottie-300 {
         display: none;
     }
 

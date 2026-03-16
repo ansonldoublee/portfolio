@@ -10,6 +10,7 @@
     <title>Anson Lee UX UI Web Design Development Home</title>
 
     <!-- Hotjar Tracking Code for https://www.ansonldoublee.com -->
+     
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -20,6 +21,9 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
+<!-- Lottie Player -->
+<script type="module" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/anson-favicon.png" type="image/png">
@@ -82,18 +86,33 @@
 
                 <section class=welcome-left>
                     <div id="welcome-lottie-300">
-                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-                        <div id="lottie-div-300">
-                        <dotlottie-player src="https://lottie.host/c9d26e31-9a9d-4980-a1fc-73235d38c9e7/DXH8TcaA0f.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay>
+                    <dotlottie-player
+                        src="./assets/lottie/welcome-lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width:300px;height:300px"
+                        loop
+                        autoplay>
+                    </dotlottie-player>
+                    </div>
+
+                <!-- animation 200px mobile version -->
+                <div id="welcome-lottie-200">
+                    <script type="module" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+
+                    <div id="lottie-div-200">
+                        <dotlottie-player
+                            src="./assets/lottie/welcome-lottie.json"
+                            background="transparent"
+                            speed="1"
+                            style="width: 200px; height: 200px"
+                            direction="1"
+                            playMode="normal"
+                            loop
+                            autoplay>
                         </dotlottie-player>
                     </div>
-                    <!-- animation 200px mobile version  -->
-                    <div id="welcome-lottie-200">
-                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-                        <div id="lottie-div-200">
-                        <dotlottie-player src="https://lottie.host/c9d26e31-9a9d-4980-a1fc-73235d38c9e7/DXH8TcaA0f.json" background="transparent" speed="1" style="width: 200px; height: 200px" direction="1" playMode="normal" loop autoplay>
-                        </dotlottie-player>
-                    </div>
+                </div>
                 </section>
 
                 <div id="welcome-right">
@@ -149,12 +168,17 @@
         <section class="ai-writer-container-blue">
             <section class="ai-writer-image">
                 <a href="./ai-writer.html">
-                    <img src="./assets/images/hero-ai-writer-cropped.png" id="cm-signup-png"></img>
+                    <img src="./assets/images/hero-ai-writer-cropped.png" id="cm-signup-png" />
 
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-                    <dotlottie-player class="lottie-play" src="https://lottie.host/eaa01b0e-98f5-46eb-b346-b0e0d475fa72/Ad9SEDb0mN.json" background="transparent" speed="2" style="width: 640px; height: 400px;"></dotlottie-player>
-
+                    <dotlottie-player
+                        class="lottie-play"
+                        src="./assets/lottie/ai-writer-lottie.json"
+                        background="transparent"
+                        speed="2"
+                        style="width: 640px; height: 400px;"
+                        loop
+                        autoplay>
+                    </dotlottie-player>
                 </a>
             </section>
             <section class="ai-writer-text">
@@ -172,10 +196,17 @@
         <section class="ai-writer-container-orange">
             <section class="ai-writer-image">
                 <a href="https://ansonldoublee.wixstudio.io/my-site-3/zookal-study-app">
-                    <img src="./assets/images/hero-zapp.png" id="ai-writer-png"></img>
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <img src="./assets/images/hero-zapp.png" id="ai-writer-png" />
 
-                    <dotlottie-player class="lottie-play" src="https://lottie.host/bac3ca77-15b8-4dbb-ada6-278a171927b3/hq0eKAdvBZ.json" background="transparent" speed="1" style="width: 640px; height: 400px;"></dotlottie-player>
+                    <dotlottie-player
+                        class="lottie-play"
+                        src="./assets/lottie/zookal-study-app-lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 640px; height: 400px;"
+                        loop
+                        autoplay>
+                    </dotlottie-player>
                 </a>
             </section>
             <section class="ai-writer-text">
@@ -193,11 +224,17 @@
         <section class="ai-writer-container-purple">
             <section class="ai-writer-image">
                 <a href="https://ansonldoublee.wixstudio.io/my-site-3/zookal-cancellations">
-                    <img src="./assets/images/hero-cancellations.png" id="cm-signup-png"></img>
+                    <img src="./assets/images/hero-cancellations.png" id="cm-signup-png" />
 
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-                    <dotlottie-player class="lottie-play" src="https://lottie.host/3c2cc7ea-ddf7-4a3f-b762-c1366341df79/9wz6mVc1QE.json" background="transparent" speed="1" style="width: 640px; height: 400px;" ></dotlottie-player>
+                    <dotlottie-player
+                        class="lottie-play"
+                        src="./assets/lottie/zookal-cancellations-lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 640px; height: 400px;"
+                        loop
+                        autoplay>
+                    </dotlottie-player>
                 </a>
             </section>
             <section class="ai-writer-text">
@@ -490,12 +527,25 @@
 
     <section class="contact-me" id="contact-anchorpoint">
         <section class="contact-me-container">
-            <h1> Contact me</h1>
-            <h3> Have any questions or inquiries?</h3>
+            <h1>Contact me</h1>
+            <h3>Have any questions or inquiries?</h3>
             <h4>Add me on LinkedIn or email me at <a href="mailto:ansonldoublee@gmail.com" id="email-link">ansonldoublee@gmail.com</a></h4>
-            <a href="https://www.linkedin.com/in/ansonldoublee/" target="_blank"><button class="contact-button">LinkedIn</button></a>
-                <section class="lottie-bye">
-                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/fc6cfa5b-bbec-4ea2-9fb0-9880e781fccc/gAA0iH0kph.json" background="transparent" speed="1" style="width: 30236; height: 168" direction="1" playMode="bounce" loop autoplay></dotlottie-player>
+            <a href="https://www.linkedin.com/in/ansonldoublee/" target="_blank">
+                <button class="contact-button">LinkedIn</button>
+            </a>
+
+            <section class="lottie-bye">
+                <dotlottie-player
+                    src="./assets/lottie/wave-lottie.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 320px; height: 168px"
+                    direction="1"
+                    playMode="bounce"
+                    loop
+                    autoplay>
+                </dotlottie-player>
+            </section>
         </section>
     </section>
 
